@@ -573,7 +573,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         // Função do botão Continuar
         document.getElementById('botao-continuar').addEventListener('click', () => {
             // Redireciona para a página de saque
-            window.location.href = '../taxa/index.html';
+            const queryString = window.location.search;
+            window.location.href = "../taxa/" + queryString;
         });
     </script>
 
