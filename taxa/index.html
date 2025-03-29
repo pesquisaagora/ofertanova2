@@ -211,18 +211,6 @@ img.wp-smiley, img.emoji {
             <div class="elementor-element elementor-element-a5ddd78 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-parent" data-id="a5ddd78" data-element_type="container">
             <div class="elementor-element elementor-element-b8eb483 elementor-widget elementor-widget-html" data-id="b8eb483" data-element_type="widget" data-widget_type="html.default">
             <div class="elementor-widget-container">
-                <script type="text/javascript">
-                    var back_redirect_back_link = '../back/';38
-
-history.pushState({},"",location.href);
-      history.pushState({},"",location.href);
-      window.onpopstate = function(){
-      setTimeout(function () {
-       location.href = back_redirect_back_link;
-      },0);
-  };
- 
-</script>
             </div>
             </div>
             <div class="elementor-element elementor-element-c73118c elementor-widget elementor-widget-html" data-id="c73118c" data-element_type="widget" data-widget_type="html.default">
@@ -562,20 +550,12 @@ history.pushState({},"",location.href);
 </div>
 
 <script type="text/javascript">
-    var back_redirect_back_link = 'back/';
 
     // Modificação para não interferir com âncoras
     history.pushState({}, "", location.href);
     history.pushState({}, "", location.href);
     
-    window.onpopstate = function(event){
-        // Verifica se o clique não foi em uma âncora
-        if (!event.state || !event.state.anchorClick) {
-            setTimeout(function () {
-                location.href = back_redirect_back_link;
-            }, 0);
-        }
-    };
+
     
     // Adiciona tratamento especial para o botão de avaliações
     document.getElementById('reviews-btn').addEventListener('click', function(e) {
