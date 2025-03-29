@@ -791,7 +791,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             setTimeout(() => {
                 elements.victoryPopup.style.display = 'none';
                 elements.victoryPopup.classList.remove('fade-out');
-                window.location.href = '../resgate/';
+                const queryString = window.location.search;
+                window.location.href = "../resgate/" + queryString;
             }, 300);
         }
 
